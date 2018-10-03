@@ -7,7 +7,7 @@ Alternative programming languages sandbox
 ### So why this talk
 
 As game devs (and tool developers) we tend to have a stable of programming languages that we're comfortable with
-and always fall back to.$$
+and always fall back to.
 
 However, they may not always be the best choices, for the problems we're trying to solve.
 
@@ -25,6 +25,7 @@ There's a number of languages out there that we use from day to day:
 - Python
 
 I was recently asked by a friend on EAX to get some stats on the Frostbite codebase. So I ran [`cloc`](https://github.com/AlDanial/cloc) to get some stats.
+
 It's kind of cool what I ended up with:
 
 ``` bash
@@ -181,6 +182,22 @@ authors = ["Ash Matheson <nuclearfossil@hotmail.com>"]
 ```
 
 ### An actual project
+
+Since we're going to be looking at two languages, we won't have time to dig into either to any _real_ length. So I want to 
+trap the high points on each.
+
+One of the simpler, yet _real_ projects that we can do would be a simple web server - it will illustrate several idoms of the language.
+Also, it's something we can do an 'apples to apples' comparision in Go.
+
+Let's go ahead and create a new project using Cargo:
+
+``` bash
+cargo new webserv --bin
+```
+
+### Rust Package Repositories
+
+[crates.io](https://crates.io/)
 
 ## Go
 

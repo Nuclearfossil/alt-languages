@@ -9,3 +9,4 @@
 **.lock
 
 **/target/debug/
+**/target/rls/
