@@ -147,7 +147,7 @@ To that end, Rust has a package manager called `cargo`. And it's very cool in wh
 
 Let's start off by creating our first 'hello world' project in rust.
 
-![First Rust Program](doc_images\initial_project_setup_01.gif)
+![First Rust Program](doc_images/initial_project_setup_01.gif)
 
 ## Go
 
