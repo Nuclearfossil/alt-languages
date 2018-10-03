@@ -149,6 +149,39 @@ Let's start off by creating our first 'hello world' project in rust.
 
 ![First Rust Program](doc_images/initial_project_setup_01.gif)
 
+What we have now is the basic structure of a rust project - a program, a folder layout and and actual bit of code that can compile and run.
+
+![Folder Structure](doc_images/initial_project_setup_02.gif)
+
+So what we end up with is:
+
+``` bash
+λ tree . /F
+Folder PATH listing for volume Magneto
+Volume serial number is 56B5-99F9
+E:\DEV\ALT-LANGUAGES\RUSTLANG\HELLO_WORLD
+│   Cargo.toml          // This is the 'package' file - fundamentally the .vcxproj file
+└───src
+        main.rs         // Our source file
+```
+
+What does it look like to actually build the project?
+
+![build and run](doc_images/initial_project_setup_03.gif)
+
+### What's in the 'Cargo.toml' file
+
+``` ini
+[package]
+name = "hello_world"
+version = "0.1.0"
+authors = ["Ash Matheson <nuclearfossil@hotmail.com>"]
+
+[dependencies]
+```
+
+### An actual project
+
 ## Go
 
 [Go](golang.org) is actually a language used heavily at Google. They've made a very large investment in it, and continue to do so.
@@ -162,3 +195,11 @@ From Wikipedia:
 [Go Installation](https://golang.org/dl/) is fairly trivial as well.
 
 I won't detail the installation process in great detail - it's very obvious how that works.
+
+## Web References
+
+### Rust References
+
+[The Rust installer](https://www.rust-lang.org/en-US/install.html)
+[The Cargo Book](https://doc.rust-lang.org/cargo/index.html)
+[Rust Libraries](http://libs.rs)
