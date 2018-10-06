@@ -1,8 +1,10 @@
-use std::io::prelude::*;
-use std::net::TcpStream;
+// Use is for Crates
 use std::net::TcpListener;
 
-use std::fs::File;
+// mod is for files on your file system 
+// use handlers::handle_connection;
+mod handlers;
+use handlers::connection::handle_connection;
 
 fn main() 
 {
@@ -10,24 +12,9 @@ fn main()
 
     for stream in listener.incoming() 
     {
+        println!("Incoming Connection");
         let stream = stream.unwrap();
 
         handle_connection(stream);
     }
-}
-
-fn handle_connection(mut stream: TcpStream)
-{
-    let mut buffer = [0; 512];
-
-    stream.read(&mut buffer).unwrap();
-
-    let mut file = File::open("hello.html").unwrap();
-    let mut contents = String::new();
-    file.read_to_string(&mut contents).unwrap();
-
-
-    let response = format!("HTTP/1.1 200 OK\r\n\r\n{}", contents);
-    stream.write(response.as_bytes()).unwrap();
-    stream.flush().unwrap();
 }
