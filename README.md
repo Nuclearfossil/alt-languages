@@ -219,6 +219,17 @@ From Wikipedia:
 
 I won't detail the installation process in great detail - it's very obvious how that works.
 
+However, a couple of things to note:
+
+- go project management is ... odd. Compiling your go projects means you have to set a 'GOPATH' environment variable.
+- In Powershell, you'll need to do something like this:
+
+``` powershell
+PS E:\dev\alt-languages> $env:GOPATH = Join-Path $PWD '\golang'
+PS E:\dev\alt-languages> go env GOPATH
+E:\dev\alt-languages\golang
+```
+
 ## Web References
 
 ### Rust References
