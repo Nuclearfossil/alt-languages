@@ -195,9 +195,15 @@ Let's go ahead and create a new project using Cargo:
 cargo new webserv --bin
 ```
 
+Now, I'm going to do a lot by hand, but there's no reason we can't do this in a more automated fashion.
+
 ### Rust Package Repositories
 
-[crates.io](https://crates.io/)
+- [crates.io](https://crates.io/)
+
+### Rust web links
+
+- [Rust Book](https://doc.rust-lang.org/book/2018-edition/foreword.html)
 
 ## Go
 
