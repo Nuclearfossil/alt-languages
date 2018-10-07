@@ -237,7 +237,73 @@ First off, we're going to need a directory setup. With all go projects - everyth
 We'll want to create a folder off your GOPATH called `src` - this is where we'll put our go based web server. Go creates, when you build
 your project, a `bin` folder.
 
+So, for this project we have:
 
+```
+golang
+  - src                              (directory)
+    - webserver                      (directory)
+        - webdebug.go                (file)
+        - webserver.go               (file)
+  404.html                           (file)
+  hello.html                         (file)
+```
+
+Running the project is pretty simple. From a shell, in the golang folder, you'll want to run the following command:
+
+``` bash
+PS E:\dev\alt-languages\golang> go run webserver
+Starting Web Service
+```
+
+This compiles the program and runs it out of a temporary folder.
+
+Should you want to generate an executable, you can do this:
+
+``` bash
+PS E:\dev\alt-languages\golang> go build webserver
+PS E:\dev\alt-languages\golang> dir
+
+
+    Directory: E:\dev\alt-languages\golang
+
+
+Mode                LastWriteTime         Length Name----                -------------         ------ ----
+d-----        10/6/2018  12:52 PM                bin
+d-----        10/6/2018  12:52 PM                src
+-a----        10/6/2018   3:32 PM            213 404.html
+-a----        10/6/2018   3:59 PM            184 hello.html
+-a----        10/6/2018  10:35 PM        6401024 webserver.exe
+
+```
+
+Note that the executable is generated in the folder that we run the command from. We can redirect that to another
+path with the following:
+
+``` bash
+PS E:\dev\alt-languages\golang> dir bin
+
+
+    Directory: E:\dev\alt-languages\golang\bin
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        10/6/2018  12:52 PM        5323776 gopkgs.exe
+
+
+PS E:\dev\alt-languages\golang> go build -o bin\webserver.exe webserver
+PS E:\dev\alt-languages\golang> dir bin
+
+
+    Directory: E:\dev\alt-languages\golang\bin
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        10/6/2018  12:52 PM        5323776 gopkgs.exe
+-a----        10/6/2018  10:40 PM        6401024 webserver.exe
+```
 
 ## Web References
 

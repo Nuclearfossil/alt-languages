@@ -12,6 +12,7 @@ func main() {
 	http.HandleFunc("/", MainPage)
 	http.HandleFunc("/hi", HiPage)
 
+	fmt.Println("Starting Web Service")
 	log.Fatal(http.ListenAndServe(":8081", nil))
 }
 
