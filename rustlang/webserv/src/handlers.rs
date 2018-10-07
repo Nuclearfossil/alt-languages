@@ -24,6 +24,11 @@ pub mod connection
             let response = format!("HTTP/1.1 200 OK\r\n\r\n{}{}", contents, s);
             stream.write(response.as_bytes()).unwrap();
         }
+        else if buffer.starts_with(b"GET /hi HTTP/1.1\r\n")
+        {
+            let response = format!("HTTP/1.1 200 OK\r\n\r\n{}", "Hi!");
+            stream.write(response.as_bytes()).unwrap();
+        }
         else
         {
             let contents = fs::read_to_string("404.html").unwrap();

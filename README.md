@@ -183,7 +183,7 @@ authors = ["Ash Matheson <nuclearfossil@hotmail.com>"]
 
 ### An actual project
 
-Since we're going to be looking at two languages, we won't have time to dig into either to any _real_ length. So I want to 
+Since we're going to be looking at two languages, we won't have time to dig into either to any _real_ length. So I want to
 trap the high points on each.
 
 One of the simpler, yet _real_ projects that we can do would be a simple web server - it will illustrate several idoms of the language.
@@ -211,7 +211,7 @@ Now, I'm going to do a lot by hand, but there's no reason we can't do this in a 
 
 From Wikipedia:
 
-> Go (often referred to as Golang) is a programming language created in 2009 by Google[12] employees Robert Griesemer, Rob Pike, and Ken Thompson.[10] Go is a statically typed, compiled language in the tradition of C, with memory safety, garbage collection, structural typing,[3] and CSP-style concurrency.[13] The compiler, tools, and source code are all free and open source.[14]
+> Go (often referred to as Golang) is a programming language created in 2009 by Google employees Robert Griesemer, Rob Pike, and Ken Thompson. Go is a statically typed, compiled language in the tradition of C, with memory safety, garbage collection, structural typing, and CSP-style concurrency. The compiler, tools, and source code are all free and open source.
 
 ### Installation - Go
 
@@ -221,14 +221,23 @@ I won't detail the installation process in great detail - it's very obvious how 
 
 However, a couple of things to note:
 
-- go project management is ... odd. Compiling your go projects means you have to set a 'GOPATH' environment variable.
-- In Powershell, you'll need to do something like this:
+Go project management is ... odd. Compiling your go projects means you have to set a 'GOPATH' environment variable.
+In Powershell, you'll need to do something like this:
 
 ``` powershell
 PS E:\dev\alt-languages> $env:GOPATH = Join-Path $PWD '\golang'
 PS E:\dev\alt-languages> go env GOPATH
 E:\dev\alt-languages\golang
 ```
+
+### A Go Based Web Server
+
+First off, we're going to need a directory setup. With all go projects - everything is directory based, from your GOPATH. 
+
+We'll want to create a folder off your GOPATH called `src` - this is where we'll put our go based web server. Go creates, when you build
+your project, a `bin` folder.
+
+
 
 ## Web References
 
