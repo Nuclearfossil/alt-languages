@@ -232,10 +232,14 @@ E:\dev\alt-languages\golang
 
 ### A Go Based Web Server
 
-First off, we're going to need a directory setup. With all go projects - everything is directory based, from your GOPATH. 
+First off, we're going to need a directory setup. With all go projects - everything is directory based, from your GOPATH. From the [How to write Go code](https://golang.org/doc/code.html)
 
-We'll want to create a folder off your GOPATH called `src` - this is where we'll put our go based web server. Go creates, when you build
-your project, a `bin` folder.
+>> A workspace contains many version control repositories (managed by Git, for example).
+>> Each repository contains one or more packages.
+>> Each package consists of one or more Go source files in a single directory.
+>> The path to a package's directory determines its import path.
+
+Go manages your code in 'workspaces' - they consist of a directory hierarchy of at least two folders: a `src` folder that contains, you guessed it, source code and a `bin` folder that contains executable commands. The `go` compiler will install binaries into the `bin` folder. _In Theory_
 
 So, for this project we have:
 
@@ -309,6 +313,12 @@ Mode                LastWriteTime         Length Name
 
 ### Rust References
 
-[The Rust installer](https://www.rust-lang.org/en-US/install.html)
-[The Cargo Book](https://doc.rust-lang.org/cargo/index.html)
-[Rust Libraries](http://libs.rs)
+- [The Rust installer](https://www.rust-lang.org/en-US/install.html)
+- [The Cargo Book](https://doc.rust-lang.org/cargo/index.html)
+- [Rust Libraries](http://libs.rs)
+
+### Go References
+
+- [GoLang Cheat sheet](https://github.com/a8m/go-lang-cheat-sheet)
+- [GoDocs Package repository](https://godoc.org)
+- [Curated Go project](https://github.com/golang/go/wiki/Projects)
