@@ -129,9 +129,9 @@ the learning materials you'd ever want.
 
 From Wikipedia:
 
-> Rust is a systems programming language sponsored by Mozilla which describes it as a "safe, concurrent, practical language", supporting functional and imperative-procedural paradigms. Rust is syntactically similar to C++[according to whom?], but its designers intend it to provide better memory safety while still maintaining performance.
->
-> Rust is free and open-source software, released under an MIT License, or Apache License 2.0. Its designers have refined the language through the experiences of writing the Servo web browser layout engine and the Rust compiler. A large proportion of current commits to the project are from community members.
+Rust is a systems programming language sponsored by Mozilla which describes it as a "safe, concurrent, practical language", supporting functional and imperative-procedural paradigms. Rust is syntactically similar to C++[according to whom?], but its designers intend it to provide better memory safety while still maintaining performance.
+
+Rust is free and open-source software, released under an MIT License, or Apache License 2.0. Its designers have refined the language through the experiences of writing the Servo web browser layout engine and the Rust compiler. A large proportion of current commits to the project are from community members.
 
 ### Installation - Rust
 
@@ -253,7 +253,7 @@ golang
   hello.html                         (file)
 ```
 
-Running the project is pretty simple. From a shell, in the golang folder, you'll want to run the following command:
+Running the project is pretty simple. From a shell, in the golang folder (your %GOPATH% folder), you'll run the following command:
 
 ``` bash
 PS E:\dev\alt-languages\golang> go run webserver
