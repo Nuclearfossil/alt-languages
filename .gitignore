@@ -10,3 +10,4 @@
 
 **/target/debug/
 **/target/rls/
+golang/pkg/mod/cache/**

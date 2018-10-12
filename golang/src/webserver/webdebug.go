@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-func DebugResponse(r *http.Request) {
+func DebugResponse(r *http.Request){
 	fmt.Println("Incoming Connection")
 	fmt.Println(r.Method)
 	fmt.Println(r.Header)

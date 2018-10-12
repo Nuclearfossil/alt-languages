@@ -8,7 +8,7 @@ import (
 	"path"
 )
 
-func main() {
+func main(){
 	http.HandleFunc("/", MainPage)
 	http.HandleFunc("/hi", HiPage)
 
@@ -16,13 +16,13 @@ func main() {
 	log.Fatal(http.ListenAndServe(":8081", nil))
 }
 
-func MainPage(w http.ResponseWriter, r *http.Request) {
+func MainPage(w http.ResponseWriter, r *http.Request){
 	DebugResponse(r)
 	var rootPath = os.Getenv("GOPATH")
 	http.ServeFile(w, r, path.Join(rootPath, "hello.html"))
 }
 
-func HiPage(w http.ResponseWriter, r *http.Request) {
+func HiPage(w http.ResponseWriter, r *http.Request){
 	DebugResponse(r)
 	fmt.Fprintf(w, "Hi")
 }
